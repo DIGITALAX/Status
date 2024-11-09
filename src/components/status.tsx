@@ -103,7 +103,9 @@ export default function StatusPage({
                     >
                       <div
                         id={`tooltip-${siteIndex}-${dayIndex}`}
-                        className={`absolute w-fit bg-black/70 text-white text-center border border-offWhite py-1 px-1.5 text-xxxs text-center opacity-0 transition-opacity duration-300 z-50 -top-12 pointer-events-none ${leftPosition} md:-left-24`}
+                        className={`absolute w-fit bg-black/70 text-white text-center border border-offWhite py-1 px-1.5 text-xxxs text-center opacity-0 transition-opacity duration-300 z-50 -top-12 pointer-events-none ${
+                          dayIndex < 45 ? "left-0" : leftPosition
+                        }`}
                       >
                         {sitio?.fechas?.find(
                           (f) => formatDate(new Date(f.date)) == fecha
