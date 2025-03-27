@@ -12,6 +12,48 @@ export const SITIOS_WEB: {
     fechas: [],
   },
   {
+    titulo: "TripleA",
+    sitio: "https://triplea.agentmeme.xyz/",
+    fechas: [
+      {
+        date: new Date("2024-11-08"),
+        status: "lensv3 migration",
+      },
+      {
+        date: new Date("2024-11-07"),
+        status: "lensv3 migration",
+      },
+    ],
+  },
+  {
+    titulo: "Lucidity",
+    sitio: "https://lucidity.agentmeme.xyz/",
+    fechas: [
+      {
+        date: new Date("2024-11-08"),
+        status: "lensv3 migration",
+      },
+      {
+        date: new Date("2024-11-07"),
+        status: "lensv3 migration",
+      },
+    ],
+  },
+  {
+    titulo: "Skyhunters",
+    sitio: "https://skyhunters.agentmeme.xyz/",
+    fechas: [
+      {
+        date: new Date("2024-11-08"),
+        status: "lensv3 migration",
+      },
+      {
+        date: new Date("2024-11-07"),
+        status: "lensv3 migration",
+      },
+    ],
+  },
+  {
     titulo: "NPC Studio",
     sitio: "https://www.npcstudio.xyz/",
     fechas: [],
