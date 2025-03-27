@@ -5,4 +5,6 @@ export type Dictionary = {
   hoy: string;
   operacional: string;
   migration: string;
+  lens: string;
+  test: string;
 };

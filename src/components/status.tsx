@@ -13,7 +13,7 @@ export default function StatusPage({
   lang: string;
 }) {
   function formatDate(date: Date) {
-    return date.toISOString().split("T")[0];
+    return date?.toISOString()?.split("T")?.[0] || "";
   }
   const [dias, setDias] = useState<"90" | "45">("90");
   const [leftPosition, setLeftPosition] = useState("-left-28");
@@ -78,7 +78,9 @@ export default function StatusPage({
                       className={`relative w-full h-10 flex items-center justify-center cursor-pointer ${
                         sitio?.fechas?.find(
                           (f) => formatDate(new Date(f.date)) == fecha
-                        )
+                        ) ||
+                        sitio?.fechas?.filter((fec) => fec?.status == "test")
+                          ?.length > 0
                           ? "bg-[#e9680f] hover:bg-[#e9680f]/70"
                           : "bg-[#10a37f] hover:bg-[#10a37f]/70"
                       }`}
@@ -87,7 +89,6 @@ export default function StatusPage({
                           `tooltip-${siteIndex}-${dayIndex}`
                         );
                         if (tooltip) {
-                          console.log({ tooltip });
                           tooltip.style.opacity = "1";
                         }
                       }}
@@ -107,13 +108,26 @@ export default function StatusPage({
                           dayIndex < 45 ? "left-0" : leftPosition
                         }`}
                       >
-                        {sitio?.fechas?.find(
+                        {(sitio?.fechas?.find(
                           (f) => formatDate(new Date(f.date)) == fecha
-                        )?.status && "⚠️"}{" "}
+                        )?.status ||
+                          sitio?.fechas?.filter((fec) => fec?.status == "test")
+                            ?.length > 0) &&
+                          "⚠️"}{" "}
                         {fecha}:{" "}
                         {sitio?.fechas?.find(
                           (f) => formatDate(new Date(f.date)) == fecha
-                        )?.status || dict.operacional}
+                        )?.status
+                          ? dict?.[
+                              sitio?.fechas?.find(
+                                (f) => formatDate(new Date(f.date)) == fecha
+                              )?.status as keyof Dictionary
+                            ]
+                          : sitio?.fechas?.filter(
+                              (fec) => fec?.status == "test"
+                            )?.length > 0
+                          ? dict.test
+                          : dict.operacional}
                       </div>
                     </div>
                   );

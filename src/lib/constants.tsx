@@ -9,19 +9,24 @@ export const SITIOS_WEB: {
   {
     titulo: "Flagship",
     sitio: "https://www.digitalax.xyz/",
-    fechas: [],
+    fechas: [
+      {
+        date: new Date("2025-03-26"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-25"),
+        status: "lens",
+      },
+    ],
   },
   {
     titulo: "TripleA",
     sitio: "https://triplea.agentmeme.xyz/",
     fechas: [
       {
-        date: new Date("2024-11-08"),
-        status: "lensv3 migration",
-      },
-      {
-        date: new Date("2024-11-07"),
-        status: "lensv3 migration",
+        date: new Date("2025-02-10"),
+        status: "test",
       },
     ],
   },
@@ -30,12 +35,8 @@ export const SITIOS_WEB: {
     sitio: "https://lucidity.agentmeme.xyz/",
     fechas: [
       {
-        date: new Date("2024-11-08"),
-        status: "lensv3 migration",
-      },
-      {
-        date: new Date("2024-11-07"),
-        status: "lensv3 migration",
+        date: new Date("2025-02-10"),
+        status: "test",
       },
     ],
   },
@@ -44,12 +45,8 @@ export const SITIOS_WEB: {
     sitio: "https://skyhunters.agentmeme.xyz/",
     fechas: [
       {
-        date: new Date("2024-11-08"),
-        status: "lensv3 migration",
-      },
-      {
-        date: new Date("2024-11-07"),
-        status: "lensv3 migration",
+        date: new Date("2025-02-10"),
+        status: "test",
       },
     ],
   },

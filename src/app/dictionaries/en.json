@@ -4,5 +4,7 @@
   "hoy": "Today",
   "operacional": "Operational",
   "migration": "Migration",
-  "45": "45 Days Ago"
+  "45": "45 Days Ago",
+  "lens": "LensV3 Migration",
+  "test": "LensV3 Testnet"
 }
