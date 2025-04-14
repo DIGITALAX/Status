@@ -25,8 +25,72 @@ export const SITIOS_WEB: {
     sitio: "https://triplea.agentmeme.xyz/",
     fechas: [
       {
-        date: new Date("2025-02-10"),
-        status: "test",
+        date: new Date("2025-04-10"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-09"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-08"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-07"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-06"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-05"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-04"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-03"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-02"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-01"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-31"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-30"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-29"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-28"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-27"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-26"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-25"),
+        status: "lens",
       },
     ],
   },
@@ -35,8 +99,72 @@ export const SITIOS_WEB: {
     sitio: "https://lucidity.agentmeme.xyz/",
     fechas: [
       {
-        date: new Date("2025-02-10"),
-        status: "test",
+        date: new Date("2025-04-10"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-09"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-08"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-07"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-06"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-05"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-04"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-03"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-02"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-04-01"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-31"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-30"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-29"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-28"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-27"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-26"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-03-25"),
+        status: "lens",
       },
     ],
   },
@@ -53,17 +181,31 @@ export const SITIOS_WEB: {
   {
     titulo: "NPC Studio",
     sitio: "https://www.npcstudio.xyz/",
-    fechas: [],
+    fechas: [
+      {
+        date: new Date("2025-02-10"),
+        status: "test",
+      },
+    ],
   },
   {
     titulo: "Chromadin",
     sitio: "https://www.chromadin.xyz/",
-    fechas: [],
+    fechas: [
+      {
+        date: new Date("2025-02-10"),
+        status: "test",
+      },
+    ],
   },
   {
     titulo: "Cypher Search",
     sitio: "https://cypher.digitalax.xyz/",
     fechas: [
+      {
+        date: new Date("2025-02-10"),
+        status: "test",
+      },
       {
         date: new Date("2024-11-08"),
         status: "migration",
@@ -77,12 +219,21 @@ export const SITIOS_WEB: {
   {
     titulo: "Coin Op",
     sitio: "https://coinop.themanufactory.xyz/",
-    fechas: [],
+    fechas: [
+      {
+        date: new Date("2025-02-10"),
+        status: "test",
+      },
+    ],
   },
   {
     titulo: "Kinora",
     sitio: "https://kinora.irrevocable.dev/",
     fechas: [
+      {
+        date: new Date("2025-02-10"),
+        status: "test",
+      },
       {
         date: new Date("2024-11-08"),
         status: "migration",
@@ -96,7 +247,12 @@ export const SITIOS_WEB: {
   {
     titulo: "Listener",
     sitio: "https://listener.irrevocable.dev/",
-    fechas: [],
+    fechas: [
+      {
+        date: new Date("2025-02-10"),
+        status: "test",
+      },
+    ],
   },
   {
     titulo: "The Manufactory",
@@ -106,7 +262,12 @@ export const SITIOS_WEB: {
   {
     titulo: "Legend",
     sitio: "https://legend.irrevocable.dev/",
-    fechas: [],
+    fechas: [
+      {
+        date: new Date("2025-02-10"),
+        status: "test",
+      },
+    ],
   },
 ];
 
