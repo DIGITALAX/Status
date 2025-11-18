@@ -173,6 +173,10 @@ export const SITIOS_WEB: {
     sitio: "https://skyhunters.agentmeme.xyz/",
     fechas: [
       {
+        date: new Date("2025-11-17"),
+        status: "lens",
+      },
+      {
         date: new Date("2025-02-10"),
         status: "test",
       },
@@ -182,6 +186,10 @@ export const SITIOS_WEB: {
     titulo: "NPC Studio",
     sitio: "https://www.npcstudio.xyz/",
     fechas: [
+      {
+        date: new Date("2025-10-20"),
+        status: "lens",
+      },
       {
         date: new Date("2025-02-10"),
         status: "test",
@@ -193,6 +201,10 @@ export const SITIOS_WEB: {
     sitio: "https://www.chromadin.xyz/",
     fechas: [
       {
+        date: new Date("2025-10-20"),
+        status: "lens",
+      },
+      {
         date: new Date("2025-02-10"),
         status: "test",
       },
@@ -202,6 +214,10 @@ export const SITIOS_WEB: {
     titulo: "Cypher Search",
     sitio: "https://cypher.digitalax.xyz/",
     fechas: [
+      {
+        date: new Date("2025-10-20"),
+        status: "lens",
+      },
       {
         date: new Date("2025-02-10"),
         status: "test",
@@ -221,6 +237,10 @@ export const SITIOS_WEB: {
     sitio: "https://coinop.themanufactory.xyz/",
     fechas: [
       {
+        date: new Date("2025-11-17"),
+        status: "lens",
+      },
+      {
         date: new Date("2025-02-10"),
         status: "test",
       },
@@ -230,6 +250,10 @@ export const SITIOS_WEB: {
     titulo: "Kinora",
     sitio: "https://kinora.irrevocable.dev/",
     fechas: [
+      {
+        date: new Date("2025-10-25"),
+        status: "lens",
+      },
       {
         date: new Date("2025-02-10"),
         status: "test",
@@ -249,7 +273,53 @@ export const SITIOS_WEB: {
     sitio: "https://listener.irrevocable.dev/",
     fechas: [
       {
+        date: new Date("2025-10-25"),
+        status: "lens",
+      },
+      {
         date: new Date("2025-02-10"),
+        status: "test",
+      },
+    ],
+  },
+  {
+    titulo: "FGO",
+    sitio: "https://fgo.themanufactory.xyz/",
+    fechas: [
+      {
+        date: new Date("2025-11-08"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-11-07"),
+        status: "test",
+      },
+    ],
+  },
+  {
+    titulo: "FGO Futures",
+    sitio: "https://futures.themanufactory.xyz/",
+    fechas: [
+      {
+        date: new Date("2025-11-08"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-11-07"),
+        status: "test",
+      },
+    ],
+  },
+  {
+    titulo: "Ionic",
+    sitio: "https://ionic.digitalax.xyz/",
+    fechas: [
+      {
+        date: new Date("2025-11-08"),
+        status: "lens",
+      },
+      {
+        date: new Date("2025-11-07"),
         status: "test",
       },
     ],
@@ -263,6 +333,10 @@ export const SITIOS_WEB: {
     titulo: "Legend",
     sitio: "https://legend.irrevocable.dev/",
     fechas: [
+      {
+        date: new Date("2025-10-01"),
+        status: "lens",
+      },
       {
         date: new Date("2025-02-10"),
         status: "test",

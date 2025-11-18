@@ -72,17 +72,25 @@ export default function StatusPage({
                   date.setDate(date.getDate() - (Number(dias) - 1 - dayIndex));
                   const fecha = formatDate(date);
 
+                  const currentDate = new Date(fecha);
+                  const matchedStatus = sitio?.fechas?.find(
+                    (f) => formatDate(new Date(f.date)) == fecha
+                  );
+
+                  const latestStatus = sitio?.fechas
+                    ?.filter((f) => new Date(f.date) <= currentDate)
+                    ?.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())?.[0];
+
+                  const displayStatus = matchedStatus || latestStatus;
+                  const isOperational = !displayStatus || displayStatus.status === "lens";
+
                   return (
                     <div
                       key={dayIndex}
                       className={`relative w-full h-10 flex items-center justify-center cursor-pointer ${
-                        sitio?.fechas?.find(
-                          (f) => formatDate(new Date(f.date)) == fecha
-                        ) ||
-                        sitio?.fechas?.filter((fec) => fec?.status == "test")
-                          ?.length > 0
-                          ? "bg-[#e9680f] hover:bg-[#e9680f]/70"
-                          : "bg-[#10a37f] hover:bg-[#10a37f]/70"
+                        isOperational
+                          ? "bg-[#10a37f] hover:bg-[#10a37f]/70"
+                          : "bg-[#e9680f] hover:bg-[#e9680f]/70"
                       }`}
                       onMouseEnter={(e) => {
                         const tooltip = document.getElementById(
@@ -108,25 +116,10 @@ export default function StatusPage({
                           dayIndex < 45 ? "left-0" : leftPosition
                         }`}
                       >
-                        {(sitio?.fechas?.find(
-                          (f) => formatDate(new Date(f.date)) == fecha
-                        )?.status ||
-                          sitio?.fechas?.filter((fec) => fec?.status == "test")
-                            ?.length > 0) &&
-                          "⚠️"}{" "}
+                        {!isOperational && "⚠️"}{" "}
                         {fecha}:{" "}
-                        {sitio?.fechas?.find(
-                          (f) => formatDate(new Date(f.date)) == fecha
-                        )?.status
-                          ? dict?.[
-                              sitio?.fechas?.find(
-                                (f) => formatDate(new Date(f.date)) == fecha
-                              )?.status as keyof Dictionary
-                            ]
-                          : sitio?.fechas?.filter(
-                              (fec) => fec?.status == "test"
-                            )?.length > 0
-                          ? dict.test
+                        {displayStatus?.status
+                          ? dict?.[displayStatus.status as keyof Dictionary]
                           : dict.operacional}
                       </div>
                     </div>
