@@ -82,7 +82,10 @@ export default function StatusPage({
                     ?.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())?.[0];
 
                   const displayStatus = matchedStatus || latestStatus;
-                  const isOperational = !displayStatus || displayStatus.status === "lens";
+                  const isOperational =
+                    !displayStatus ||
+                    displayStatus.status === "lens" ||
+                    displayStatus.status === "live";
 
                   return (
                     <div

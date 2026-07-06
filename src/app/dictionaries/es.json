@@ -6,5 +6,9 @@
   "migration": "Migración",
   "45": "Hace 45 Días",
   "lens": "Migración LensV3",
-  "test": "LensV3 Testnet"
+  "test": "LensV3 Testnet",
+  "live": "En Vivo",
+  "staking": "Unstake Activo — Contrato de Staking Matroid En Auditoría",
+  "makerkit": "Primer Maker Kit En Producción",
+  "governance": "Lanzamiento Con El Primer Proyecto En Vivo"
 }

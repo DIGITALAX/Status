@@ -7,4 +7,8 @@ export type Dictionary = {
   migration: string;
   lens: string;
   test: string;
+  live: string;
+  staking: string;
+  makerkit: string;
+  governance: string;
 };

@@ -6,5 +6,9 @@
   "migration": "Migration",
   "45": "45 Days Ago",
   "lens": "LensV3 Migration",
-  "test": "LensV3 Testnet"
+  "test": "LensV3 Testnet",
+  "live": "Live",
+  "staking": "Unstake Live — Matroid Staking Contract In Audit",
+  "makerkit": "First Maker Kit In Production",
+  "governance": "Launching With The First Live Project"
 }

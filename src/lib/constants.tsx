@@ -7,6 +7,46 @@ export const SITIOS_WEB: {
   }[];
 }[] = [
   {
+    titulo: "DX.Computer",
+    sitio: "https://dx.computer/",
+    fechas: [
+      {
+        date: new Date("2026-04-01"),
+        status: "live",
+      },
+    ],
+  },
+  {
+    titulo: "DX.App",
+    sitio: "https://app.dx.computer/",
+    fechas: [
+      {
+        date: new Date("2026-04-01"),
+        status: "makerkit",
+      },
+    ],
+  },
+  {
+    titulo: "Matroid Governance",
+    sitio: "https://www.digitalax.xyz/",
+    fechas: [
+      {
+        date: new Date("2026-04-01"),
+        status: "governance",
+      },
+    ],
+  },
+  {
+    titulo: "All Staking",
+    sitio: "https://staking.digitalax.xyz/",
+    fechas: [
+      {
+        date: new Date("2026-04-01"),
+        status: "staking",
+      },
+    ],
+  },
+  {
     titulo: "Flagship",
     sitio: "https://www.digitalax.xyz/",
     fechas: [
@@ -345,4 +385,4 @@ export const SITIOS_WEB: {
   },
 ];
 
-export const INFURA_GATEWAY: string = "https://thedial.infura-ipfs.io";
+export const INFURA_GATEWAY: string = "https://cdn.digitalax.xyz";
